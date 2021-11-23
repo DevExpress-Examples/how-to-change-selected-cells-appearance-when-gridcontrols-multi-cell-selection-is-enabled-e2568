@@ -4,7 +4,7 @@
         xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" Title="Window1" Height="300" Width="505"
         xmlns:dxgt="http://schemas.devexpress.com/winfx/2008/xaml/grid/themekeys">
     <Window.Resources>
-        <Style x:Key="SelectionStateCellStyle" TargetType="dxg:LightweightCellEditor" BasedOn="{StaticResource ResourceKey={dxgt:GridRowThemeKey ResourceKey=LightweightCellStyle}}">
+        <Style x:Key="SelectionStateCellStyle" TargetType="dxg:LightweightCellEditor">
             <Style.Triggers>
                 <Trigger Property="SelectionState" Value="Selected">
                     <Setter Property="Background" Value="Red"/>
